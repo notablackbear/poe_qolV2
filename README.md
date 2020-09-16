@@ -8,3 +8,9 @@ Steps:
 4) It's not instant. Unfortunately there's going to be some lag between the online stash and the app synchronization/refresh. It won't keep up with how quickly you are making exalts.
 5) It should work with any screen resolution, but have seen some issues crop up. If you are running two monitors, it is going to show up on Screen 0, so run PoE in Windowed Fullscreen on your primary monitor.
 
+----Updates----
+[] By default, only *unidentified* rare items item level 64 and 75 will be highlighted. This can be changed in the `chaos_items_filter.filter` file.
+[] There are two numbers in the overlay for each item class: #1/#2 where #1 is the number of unidentified items of that class were found in the stash tab, and #2 is how many identified items were found in the stash tab (within the item level range mentioned above).
+[] You will need to click the 'Chaos Recipe' button to cycle through highlights for each complete set. The number of sets highlighted can be customized by the `highlight_max_num_sets` parameter in the `Setup.ini` file.
+[] Please try the latest files if you are having issues after successfully being able to launch the app the first time.
+[] There is no need to copy anything into your "Documents\My Games\Path of Exile\", since this is done for you the first time. If you need to reset the filter for any reason, you can remove the filter that was added to your "Documents\My Games\Path of Exile\" folder. Don't delete the filters that come with the executable.
