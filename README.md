@@ -26,3 +26,5 @@ Updates
 * There is no need to copy anything into your "Documents\My Games\Path of Exile\", since this is done for you the first time. If you need to reset the filter for any reason, you can remove the filter that was added to your "Documents\My Games\Path of Exile\" folder. Don't delete the filters that come with the executable.
 
 * Color scheme should be colorblind friendly!
+
+* If you'd like to use this too in ssf, you can try to change the league to "ssf standard" (no quotation marks for now)
