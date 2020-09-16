@@ -22,3 +22,5 @@ Updates
 * Please try the latest files if you are having issues after successfully being able to launch the app the first time.
 
 * There is no need to copy anything into your "Documents\My Games\Path of Exile\", since this is done for you the first time. If you need to reset the filter for any reason, you can remove the filter that was added to your "Documents\My Games\Path of Exile\" folder. Don't delete the filters that come with the executable.
+
+* Color scheme should be colorblind friendly!
