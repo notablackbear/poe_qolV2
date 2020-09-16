@@ -2,7 +2,7 @@
 I jumped in to revive a stale codebase because league is starting so soon! We'd love to release the source, but th original author is MIA, so waiting to hear back for source release details if possible. We want to respect the originators efforts, and respect your decision to use or not to use this app in the mean time.
 
 
-Steps:
+Steps/Notes/Advice/Info
 1) You can clone the repo as is, or download the zip file from the releases. Everything should be in the same folder as the exe.
 2) Open up the Setup.ini file in text editor and *please read the instructions in that file*. There is info you need to fill out or else it won't work. Most importantly your poe account name and your POESESSID.
 3) It assumes the OS is Windows 10 and your filter folder is the default path "Documents\My Games\Path of Exile". I wouldn't mess with the included filter at this point in time. The app recreates the included default on start up, if it is not detected in your filters folder, and saves it to your filters folder. Each time you refresh or highlight chaos recipe items, it will update this filter file. So you will then need to refresh the filters in game to see changes.
@@ -12,6 +12,8 @@ Steps:
 ----
 Updates
 -----
+
+* If your account name contains non-ASCII characters, you must URL encode it first here: https://www.urlencoder.org/ Example: username Đãřķ becomes %C4%90%C3%A3%C5%99%C4%B7 after URL encoding and that can be used in the setup.ini
 
 * By default, only *unidentified* rare items item level 64 and 75 will be highlighted. This can be changed in the `chaos_items_filter.filter` file.
 
