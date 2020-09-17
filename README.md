@@ -14,8 +14,6 @@ Steps/Notes/Advice/Info
 Updates
 -----
 
-* Numbers in overlay of the foramt #1/#2 represent the number of unidentified/identified chaos recipe items in the stash tab. Only the unidentified items are highlighted because identified chaos recipe is 50% less efficient, and not really worth the time. Removing the identified item tracker altogether is being considered.
-
 * If the path to your filter folder is not "USER\Documents\My Games\Path of Exile" (for example, some people have had "USER\OneDrive\Dokuments\My Games\Path of Exile) you should enter the full folder path, starting from the "C:\" drive root.
 
 * If your account name contains non-ASCII characters, you must URL encode it first here: https://www.urlencoder.org/ Example: username Đãřķ becomes %C4%90%C3%A3%C5%99%C4%B7 after URL encoding and that can be used in the setup.ini
