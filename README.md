@@ -1,4 +1,4 @@
-# A quick readme
+# Read Me
 I jumped in to revive a stale codebase because league is starting so soon! We'd love to release the source, but th original author is MIA, so waiting to hear back for source release details if possible. We want to respect the originators efforts, and respect your decision to use or not to use this app in the mean time.
 
 Important: If you are not been using v0.2.2, please download that release [here](https://github.com/notablackbear/poe_qolV2/releases/tag/V0.2.2) and *delete the POEQOL_Base.filter* from your filter folder to reset everything.
