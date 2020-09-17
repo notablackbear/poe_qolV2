@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="tk.Frame" id="Frame_1">
+    <property name="height">800</property>
+    <property name="width">600</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Button" id="Fragments">
+        <property name="command">fragment</property>
+        <property name="image">FragmentChimera.png</property>
+        <property name="text" translatable="yes">Frags</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Splinter">
+        <property name="command">splinter</property>
+        <property name="image">VaalShard.png</property>
+        <property name="text" translatable="yes">Splinter</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Essence">
+        <property name="command">essence</property>
+        <property name="image">Greed7.png</property>
+        <property name="text" translatable="yes">Essence</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="DivCard">
+        <property name="command">divcard</property>
+        <property name="image">Deck.png</property>
+        <property name="text" translatable="yes">DivCard</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Currency">
+        <property name="command">currency</property>
+        <property name="image">CurrencyRerollRare.png</property>
+        <property name="text" translatable="yes">Currency</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="delve">
+        <property name="command">delve</property>
+        <property name="image">AbberantFossil.png</property>
+        <property name="text" translatable="yes">delve</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="incubator">
+        <property name="command">incubator</property>
+        <property name="image">IncubationUniques.png</property>
+        <property name="text" translatable="yes">incubator</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="blight_map">
+        <property name="command">blight_map</property>
+        <property name="image">blighted map.png</property>
+        <property name="text" translatable="yes">blight_map</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="map">
+        <property name="command">map</property>
+        <property name="image">Gorge3.png</property>
+        <property name="text" translatable="yes">map</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="veiled">
+        <property name="command">veiled</property>
+        <property name="image">veiled.png</property>
+        <property name="text" translatable="yes">veiled</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="rare">
+        <property name="command">rare</property>
+        <property name="image">VermillionRing.png</property>
+        <property name="text" translatable="yes">rare</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="unique">
+        <property name="command">unique</property>
+        <property name="image">CeruleanRing.png</property>
+        <property name="text" translatable="yes">unique</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="gem">
+        <property name="command">gem</property>
+        <property name="image">impale.png</property>
+        <property name="text" translatable="yes">gem</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="prophecy">
+        <property name="command">prophecy</property>
+        <property name="image">ProphecyOrbRed.png</property>
+        <property name="text" translatable="yes">prophecy</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="unid">
+        <property name="command">unid</property>
+        <property name="text" translatable="yes">unid</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="remove_highlights">
+        <property name="command">remove_highlights</property>
+        <property name="text" translatable="yes">Remove Highlights</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="columnspan">3</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="chaos_recipe">
+        <property name="command">chaos_recipe</property>
+        <property name="text" translatable="yes">Chaos Recipe</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="columnspan">3</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Overlay">
+        <property name="command">show_chaos</property>
+        <property name="text" translatable="yes">Overlay</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="columnspan">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Frame" id="Frame_2">
+    <property name="height">80</property>
+    <property name="width">280</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="OneHandWeapons">
+        <property name="background">#bbbbbb</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Weapon</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="col" id="0" name="pad">2</property>
+          <property type="row" id="0" name="pad">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="BodyArmours">
+        <property name="background">#ee3377</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Armour</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="col" id="1" name="pad">2</property>
+          <property type="row" id="0" name="pad">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Boots">
+        <property name="background">#009988</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Boot</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="col" id="2" name="pad">2</property>
+          <property type="row" id="0" name="pad">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Helmets">
+        <property name="background">#cc3311</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Helmet</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="col" id="3" name="pad">1</property>
+          <property type="row" id="0" name="pad">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Gloves">
+        <property name="background">#ee7733</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Glove</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="0" name="pad">2</property>
+          <property type="row" id="1" name="minsize">5</property>
+          <property type="row" id="1" name="pad">1</property>
+          <property type="row" id="1" name="uniform">0</property>
+          <property type="row" id="1" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Belts">
+        <property name="background">#0077bb</property>
+        <property name="disabledforeground">#000000</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="state">disabled</property>
+        <property name="text" translatable="yes">Belt:</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="1" name="pad">2</property>
+          <property type="row" id="1" name="minsize">5</property>
+          <property type="row" id="1" name="pad">1</property>
+          <property type="row" id="1" name="uniform">0</property>
+          <property type="row" id="1" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Amulets">
+        <property name="background">#33bbee</property>
+        <property name="disabledforeground">#ffffff</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Amulet: </property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="2" name="pad">2</property>
+          <property type="row" id="1" name="minsize">5</property>
+          <property type="row" id="1" name="pad">1</property>
+          <property type="row" id="1" name="uniform">0</property>
+          <property type="row" id="1" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Rings">
+        <property name="background">#33bbee</property>
+        <property name="compound">top</property>
+        <property name="foreground">#000000</property>
+        <property name="height">2</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Ring:</property>
+        <property name="width">10</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="3" name="pad">1</property>
+          <property type="row" id="1" name="minsize">5</property>
+          <property type="row" id="1" name="pad">1</property>
+          <property type="row" id="1" name="uniform">0</property>
+          <property type="row" id="1" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="refresh">
+        <property name="command">refresh_me</property>
+        <property name="height">2</property>
+        <property name="text" translatable="yes">Refresh</property>
+        <property name="width">5</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="4" name="minsize">0</property>
+          <property type="col" id="4" name="pad">0</property>
+          <property type="col" id="4" name="uniform">0</property>
+          <property type="col" id="4" name="weight">0</property>
+          <property type="row" id="1" name="minsize">5</property>
+          <property type="row" id="1" name="pad">1</property>
+          <property type="row" id="1" name="uniform">0</property>
+          <property type="row" id="1" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Button_2">
+        <property name="command">close_overlay</property>
+        <property name="foreground">#FF0000</property>
+        <property name="height">1</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">X</property>
+        <property name="width">1</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="col" id="4" name="minsize">0</property>
+          <property type="col" id="4" name="pad">0</property>
+          <property type="col" id="4" name="uniform">0</property>
+          <property type="col" id="4" name="weight">0</property>
+          <property type="row" id="0" name="pad">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_3">
+        <property name="foreground">#FF0000</property>
+        <property name="height">1</property>
+        <property name="justify">center</property>
+        <property name="width">1</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property type="row" id="0" name="pad">2</property>
+          <property name="rowspan">2</property>
+          <property name="sticky">nsw</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

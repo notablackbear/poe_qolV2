@@ -1863,11 +1863,12 @@ Show # %D4
 	PlayEffect Grey
 	MinimapIcon 2 White Pentagon
 # 234hn50987sd Start Chaos Recipe Auto-Update Section
+
 # Chaos Recipe BodyArmours
-Show 
+Show
 SetBorderColor 0 0 0
 SetFontSize 22
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 238 51 119
@@ -1876,10 +1877,10 @@ ItemLevel <= 74
 Identified False
 
 # Chaos Recipe Boots
-Show 
+Show
 SetBorderColor 48 255 0
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 0 153 136
@@ -1888,10 +1889,10 @@ Class "Boots"
 Identified False
 
 # Chaos Recipe Gloves
-Show 
+Show
 SetBorderColor 0 59 255
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 Class "Gloves"
 ItemLevel <= 74
@@ -1900,10 +1901,10 @@ SetBackgroundColor 238 119 51
 Identified False
 
 # Chaos Recipe Helmets
-Show 
+Show
 SetBorderColor 255 245 0
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 204 51 17
@@ -1912,10 +1913,10 @@ ItemLevel <= 74
 Identified False
 
 # Chaos Recipe OneHandWeapons
-Show 
+Show
 SetBorderColor 255 255 255
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 187 187 187
@@ -1926,10 +1927,10 @@ Height <= 3
 Identified False
 
 # Chaos Recipe Rings
-Show 
+Show
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 51 187 238
@@ -1941,10 +1942,10 @@ ItemLevel <= 80
 Identified False
 
 # Chaos Recipe Belts
-Show 
+Show
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 0 119 187
@@ -1956,10 +1957,10 @@ ItemLevel <= 80
 Identified False
 
 # Chaos Recipe Amulets
-Show 
+Show
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 51 187 238
@@ -1969,6 +1970,7 @@ PlayEffect Red
 Class "Amulets"
 ItemLevel <= 80
 Identified False
+
 # 2345ina8dsf7 End Chaos Recipe Auto-Update Section
 
 Show # %D4 %REMS3
@@ -8177,3 +8179,49 @@ Show # update your filter
 # GRINDING GEAR GAMES with a special thanks to: Bex, Chris, Jonathan 
 #
 # Script by NeverSink
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
