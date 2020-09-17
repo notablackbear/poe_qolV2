@@ -2,7 +2,7 @@
 Show 
 SetBorderColor 0 0 0
 SetFontSize 22
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 238 51 119
@@ -14,7 +14,7 @@ Identified False
 Show 
 SetBorderColor 48 255 0
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 0 153 136
@@ -26,7 +26,7 @@ Identified False
 Show 
 SetBorderColor 0 59 255
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 Class "Gloves"
 ItemLevel <= 74
@@ -38,7 +38,7 @@ Identified False
 Show 
 SetBorderColor 255 245 0
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 204 51 17
@@ -50,7 +50,7 @@ Identified False
 Show 
 SetBorderColor 255 255 255
 SetFontSize 28
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 187 187 187
@@ -64,7 +64,7 @@ Identified False
 Show 
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 51 187 238
@@ -79,7 +79,7 @@ Identified False
 Show 
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 0 119 187
@@ -94,7 +94,7 @@ Identified False
 Show 
 SetBorderColor 255 0 0
 SetFontSize 40
-ItemLevel >= 65
+ItemLevel >= 60
 Rarity = Rare
 SetTextColor 0 0 0
 SetBackgroundColor 51 187 238
