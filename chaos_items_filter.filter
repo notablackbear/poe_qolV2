@@ -104,3 +104,4 @@ PlayEffect Red
 Class "Amulets"
 ItemLevel <= 80
 Identified False
+
