@@ -1913,7 +1913,7 @@ ItemLevel <= 74
 Identified False
 
 # Chaos Recipe OneHandWeapons
-Show
+Hide
 SetBorderColor 255 255 255
 SetFontSize 28
 ItemLevel >= 60
@@ -8179,6 +8179,56 @@ Show # update your filter
 # GRINDING GEAR GAMES with a special thanks to: Bex, Chris, Jonathan 
 #
 # Script by NeverSink
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
