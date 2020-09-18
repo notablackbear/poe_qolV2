@@ -11,6 +11,8 @@ Steps/Notes/Advice/Info
 5) The app recreates the included default on start up, if it is not detected in your filters folder, and saves it to your filters folder. Each time you refresh or highlight chaos recipe items, it will update this filter file. So you will then need to refresh the filters in game to see changes.
 6) It's not instant. Unfortunately there's going to be some lag between the online stash and the app synchronization/refresh. It won't keep up with how quickly you are making exalts. It seems that you can force the stash to update by changing locations in game (going somewhere that requires a loading screen, like a waypoint)
 7) It should work with any screen resolution, but have seen some issues crop up. If you are running two monitors, it is going to show up on Screen 0, so _run PoE in Windowed Fullscreen on your primary monitor._
+8) There's been issues when using Vulkan for some players. Please try without Vulkan as well.
+
 
 ----
 
