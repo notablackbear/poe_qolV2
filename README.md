@@ -1,7 +1,7 @@
 # Read Me
 I jumped in to revive a stale codebase because league is starting so soon! We'd love to release the source, but th original author is MIA, so waiting to hear back for source release details if possible. We want to respect the originators efforts, and respect your decision to use or not to use this app in the mean time.
 
-Important: If you are not been using v0.2.3, please download that release [here](https://github.com/notablackbear/poe_qolV2/releases/tag/V2.0.3) and consider *deleting the POEQOL_Base.filter* from your filter folder to reset everything. If you've made some customizations to that filter prior to 0.2.3, perhaps temporarily move any existing filter named `POEQOL_Base.filter` to another location, or make sure you have a back-up copy of your customizations.
+Important: If you are not been using v2.0.3, please download that release [here](https://github.com/notablackbear/poe_qolV2/releases/tag/V2.0.3) and consider *deleting the POEQOL_Base.filter* from your filter folder to reset everything. If you've made some customizations to that filter prior to 2.0.3, perhaps temporarily move any existing filter named `POEQOL_Base.filter` to another location, or make sure you have a back-up copy of your customizations.
 
 Steps/Notes/Advice/Info
 1) You can clone the repo as is, or download the zip file from the releases, [here](https://github.com/notablackbear/poe_qolV2/releases/tag/V2.0.3) and unzip that folder.
