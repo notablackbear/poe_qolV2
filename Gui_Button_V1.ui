@@ -311,7 +311,7 @@
         <property name="foreground">#000000</property>
         <property name="height">1</property>
         <property name="state">disabled</property>
-        <property name="text" translatable="yes">Belt</property>
+        <property name="text" translatable="yes">Belt:</property>
         <property name="width">10</property>
         <layout>
           <property name="column">1</property>
@@ -326,7 +326,7 @@
         <property name="disabledforeground">#ffffff</property>
         <property name="foreground">#000000</property>
         <property name="height">1</property>
-        <property name="text" translatable="yes">Amulet</property>
+        <property name="text" translatable="yes">Amulet:</property>
         <property name="width">10</property>
         <layout>
           <property name="column">2</property>
@@ -341,7 +341,7 @@
         <property name="compound">top</property>
         <property name="foreground">#000000</property>
         <property name="height">1</property>
-        <property name="text" translatable="yes">Ring</property>
+        <property name="text" translatable="yes">Ring:</property>
         <property name="width">10</property>
         <layout>
           <property name="column">3</property>
