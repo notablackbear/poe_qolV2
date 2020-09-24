@@ -381,7 +381,7 @@
       </object>
     </child>
     <child>
-      <object class="tk.Button" id="refresh">
+      <object class="ttk.Button" id="refresh">
         <property name="command">refresh_me</property>
         <property name="background">#e1e1e1</property>
         <property name="height">1</property>
@@ -392,7 +392,7 @@
           <property name="propagate">True</property>
           <property name="row">1</property>
           <property type="col" id="4" name="minsize">0</property>
-          <property type="col" id="4" name="pad">3</property>
+          <property type="col" id="4" name="pad">2</property>
           <property type="col" id="4" name="uniform">0</property>
           <property type="col" id="4" name="weight">0</property>
           <property type="row" id="1" name="minsize">5</property>
@@ -403,10 +403,9 @@
       </object>
     </child>
     <child>
-      <object class="tk.Button" id="Button_2">
+      <object class="ttk.Button" id="Button_2">
         <property name="command">close_overlay</property>
-        <property name="foreground">#FF0000</property>
-        <property name="background">#e1e1e1</property>
+          <property name="background">#e1e1e1</property>
         <property name="height">1</property>
         <property name="justify">center</property>
         <property name="text" translatable="yes">Close</property>
@@ -424,7 +423,7 @@
       </object>
     </child>
     <child>
-      <object class="tk.Button" id="button_3">
+      <object class="ttk.Button" id="button_3">
         <property name="foreground">#d50707</property>
         <property name="background">#e1e1e1</property>
         <property name="height">1</property>
@@ -435,7 +434,7 @@
           <property name="columnspan">1</property>
           <property name="propagate">True</property>
           <property name="row">0</property>
-          <property type="row" id="0" name="pad">2</property>
+          <property type="row" id="0" name="pad">3</property>
           <property name="rowspan">2</property>
           <property name="sticky">nsw</property>
         </layout>
