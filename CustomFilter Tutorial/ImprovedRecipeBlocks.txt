@@ -1,0 +1,95 @@
+# 234hn50987sd Start Chaos Recipe Auto-Update Section
+
+# Chaos Recipe BodyArmours
+Show
+SetBorderColor 0 0 0
+SetFontSize 28
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 238 51 119
+Class "Body Armours"
+Identified False
+
+# Chaos Recipe Boots
+Show
+SetBorderColor 48 255 0
+SetFontSize 28
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 0 153 136
+Class "Boots"
+Identified False
+
+# Chaos Recipe Gloves
+Show
+SetBorderColor 0 59 255
+SetFontSize 28
+ItemLevel >= 60
+Rarity = Rare
+Class "Gloves"
+SetTextColor 0 0 0
+SetBackgroundColor 238 119 51
+Identified False
+
+# Chaos Recipe Helmets
+Show
+SetBorderColor 255 245 0
+SetFontSize 28
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 204 51 17
+Class "Helmets"
+Identified False
+
+# Chaos Recipe OneHandWeapons
+Show
+SetBorderColor 255 255 255
+SetFontSize 28
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 187 187 187
+Class "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Thrusting One Hand Swords" "Wands"
+Width = 1
+Height <= 3
+Identified False
+
+# Chaos Recipe Rings
+Show
+SetBorderColor 255 0 0
+SetFontSize 40
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 51 187 238
+MinimapIcon 0 Red Star
+Class "Rings"
+Identified False
+
+# Chaos Recipe Belts
+Show
+SetBorderColor 255 0 0
+SetFontSize 40
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 0 119 187
+Class "Belts"
+Identified False
+
+# Chaos Recipe Amulets
+Show
+SetBorderColor 255 0 0
+SetFontSize 40
+ItemLevel >= 60
+Rarity = Rare
+SetTextColor 0 0 0
+SetBackgroundColor 51 187 238
+MinimapIcon 0 Red Star
+Class "Amulets"
+Identified False
+
+# 2345ina8dsf7 End Chaos Recipe Auto-Update Section
