@@ -9,28 +9,50 @@ The code is scuffed, and not professionally written in anyway. I am learning a t
 
 To everyone still having issues, please bear with us as we step through the following fixes and changes, in no particular order:
 
-[ ] Easier method of pointing the app to the players filter folder. Right now this is confusing, and making it interactive with a file dialog should make this better.
-[ ] Simplify the user settings inpute and defaults, including league, acct name, poesessid, etc.
+[] Easier method of pointing the app to the players filter folder. Right now this is confusing, and making it interactive with a file dialog should make this better.
+
+[]  Simplify the user settings inpute and defaults, including league, acct name, poesessid, etc.
+
 [ ] Proper logging and debugging
+
 [x] Support non-ASCII characters in account names
+
 [ ] Alert player that they should manually refresh the filter in the game's UI options tab
+
 [ ] Add a Highlight button to the overlay in addition to the app
+
 [ ] Fix some instances of `fatal error`
+
 [ ] False positive security alerts from anti-virus apps
+
 [ ] Identify why filter will not start hiding items after they have reached threshold in some instances
+
 [ ] Overlay will highlight magic items in addition to rare items
+
 [ ] Overlay will highlight one handed weapons which do not meet the 1x3 size criteria
+
 [ ] Distribute with the latest Neversink filters, including a fix the the 'Pernarch' missing base type issue.
+
 [ ] Help users to provide their own filters, in addition to ones from Path of Matth and Neversink/filterblade
+
 [ ] Better way of the app finding and updating its filter entries based on its counts
+
 [ ] Fix bug where alternate artwork items in stash tabs will short circuit the tool in certain cases
+
 [ ] Overlay will randomly jump in response to clicking on it
+
 [ ] Stash search improvement
+
 [ ] Option to fix the position of the overlay after placing it
+
 [ ] Detecting the screen and resolution of the PoE window so that users can run the overlay on a non-primary monitor
+
 [ ] Allow for higher iLvl items to be shown and highlighted as long as it is possible to include at least one iLvl<75 item
+
 [ ] Toggle Regal orb recipe
+
 [ ] Support for multiple tabs
+
 [ ] Support different thresholds for different item classes
 
 
