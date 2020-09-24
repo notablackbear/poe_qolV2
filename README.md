@@ -9,51 +9,53 @@ The code is scuffed, and not professionally written in anyway. I am learning a t
 
 To everyone still having issues, please bear with us as we step through the following fixes and changes, in no particular order:
 
-[] Easier method of pointing the app to the players filter folder. Right now this is confusing, and making it interactive with a file dialog should make this better.
+- [ ] Instructions for contributors
 
-[]  Simplify the user settings inpute and defaults, including league, acct name, poesessid, etc.
+- [ ] Easier method of pointing the app to the players filter folder. Right now this is confusing, and making it interactive with a file dialog should make this better.
 
-[ ] Proper logging and debugging
+- [ ] Simplify the user settings inpute and defaults, including league, acct name, poesessid, etc.
 
-[x] Support non-ASCII characters in account names
+- [ ] Proper logging and debugging
 
-[ ] Alert player that they should manually refresh the filter in the game's UI options tab
+- [x] Support non-ASCII characters in account names
 
-[ ] Add a Highlight button to the overlay in addition to the app
+- [ ] Alert player that they should manually refresh the filter in the game's UI options tab
 
-[ ] Fix some instances of `fatal error`
+- [ ] Add a Highlight button to the overlay in addition to the app
 
-[ ] False positive security alerts from anti-virus apps
+- [ ] Fix some instances of `fatal error`
 
-[ ] Identify why filter will not start hiding items after they have reached threshold in some instances
+- [ ] False positive security alerts from anti-virus apps
 
-[ ] Overlay will highlight magic items in addition to rare items
+- [ ] Identify why filter will not start hiding items after they have reached threshold in some instances
 
-[ ] Overlay will highlight one handed weapons which do not meet the 1x3 size criteria
+- [ ] Overlay will highlight magic items in addition to rare items
 
-[ ] Distribute with the latest Neversink filters, including a fix the the 'Pernarch' missing base type issue.
+- [ ] Overlay will highlight one handed weapons which do not meet the 1x3 size criteria
 
-[ ] Help users to provide their own filters, in addition to ones from Path of Matth and Neversink/filterblade
+- [ ] Distribute with the latest Neversink filters, including a fix the the 'Pernarch' missing base type issue.
 
-[ ] Better way of the app finding and updating its filter entries based on its counts
+- [ ] Help users to provide their own filters, in addition to ones from Path of Matth and Neversink/filterblade
 
-[ ] Fix bug where alternate artwork items in stash tabs will short circuit the tool in certain cases
+- [ ] Better way of the app finding and updating its filter entries based on its counts
 
-[ ] Overlay will randomly jump in response to clicking on it
+- [ ] Fix bug where alternate artwork items in stash tabs will short circuit the tool in certain cases
 
-[ ] Stash search improvement
+- [ ] Overlay will randomly jump in response to clicking on it
 
-[ ] Option to fix the position of the overlay after placing it
+- [ ] Stash search improvement
 
-[ ] Detecting the screen and resolution of the PoE window so that users can run the overlay on a non-primary monitor
+- [ ] Option to fix the position of the overlay after placing it
 
-[ ] Allow for higher iLvl items to be shown and highlighted as long as it is possible to include at least one iLvl<75 item
+- [ ] Detecting the screen and resolution of the PoE window so that users can run the overlay on a non-primary monitor
 
-[ ] Toggle Regal orb recipe
+- [ ] Allow for higher iLvl items to be shown and highlighted as long as it is possible to include at least one iLvl<75 item
 
-[ ] Support for multiple tabs
+- [ ] Toggle Regal orb recipe
 
-[ ] Support different thresholds for different item classes
+- [ ] Support for multiple tabs
+
+- [ ] Support different thresholds for different item classes
 
 
 
