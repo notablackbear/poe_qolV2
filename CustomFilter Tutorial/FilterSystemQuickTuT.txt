@@ -1,0 +1,43 @@
+---------------------------------------------
+IF YOU DONT CARE about any unidentified Rares, you can put the Chaos-Recipe-Blocks right after the [[3000]] headline
+before anything else actually inside the category.
+---------------------------------------------
+
+QUICK TUTORIAL
+
+---------------------------------------------
+
+Every Filter is just a insane amount of Show- or Hide-blocks just like this:
+
+
+Show
+SetBorderColor 255 0 0
+SetFontSize 40
+ItemLevel >= 60
+Rarity = Rare
+Class "Amulets"
+SetTextColor 0 0 0
+SetBackgroundColor 51 187 238
+PlayAlertSound 16 300
+
+---------------------------------------------
+
+Any line starting with " # " is just a comment and is ignored by PoE.
+You can make easy changes to color and sizes as you can see its just a number after a keyword.
+i. e. "SetFontSize" has a number attached used just like the Slider on filterblade.xyz which changes the Size of the Textboxes
+
+Now when it comes to priority, the lower a Block is added, the less priority is has.
+That means that the first block will overrule every single other block.
+In the Neversink filter you can see the table of content right at the top after his plugs.
+There you can see the priority of rules. Dont forget that some of them are Hide-Blocks.
+
+In terms of unidentified rares, it starts off with influence rares,Explicit Mod filtering (which is empty on high strictness),
+6-Socket and 5-Link, few recipe's, crafting-bases
+and lastly our main category "RARE ITEMS" at [[3000]].
+After that one in [[3400]] in will hide all remaining rares from itemlevel 65 to 75.
+
+There is some leveling stuff later.
+---------------------------------------------
+If you dont care about any unidentified Rares, you can put the Chaos-Recipe-Blocks right after the [[3000]] headline
+before anything else actually inside the category.
+---------------------------------------------
