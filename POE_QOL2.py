@@ -12,6 +12,7 @@ from math import ceil
 from tkinter import font
 import datetime
 import pyperclip
+from ctypes import wintypes, windll, pointer
 
 def debug_app(debug_bool):
         import sys
@@ -68,8 +69,22 @@ class MyApplication(pygubu.TkApplication):
         # self.check_filter()  # This is legacy, to set the self.active_status parameter. I don't think that is needed anymore
         self.setup_app()
 
-    def setup_app(self):
+    # Detect PoE-window location
+    # Returns width, height, x-, and y-offset
+    def get_poe_window_location(self):
+        hwnd = windll.user32.FindWindowW(0, 'Path of Exile')
+        rect = wintypes.RECT()
+        windll.user32.GetWindowRect(hwnd, pointer(rect))
 
+        height_offset = 39 # Offset to get correct height
+        width_offset = 16 # -||- width
+        height = rect.bottom - rect.top - height_offset
+        width = rect.right - rect.left - width_offset
+
+        # 7 and 31 are magical offset numbers related to Windows-border size
+        return (width, height, rect.left + 7, rect.top + 31)
+
+    def setup_app(self):
         """
         We run this on initialization. This is a separate method so that we can reload the settings while app is running. It *might* cause some undesired effects. TBD
         """
@@ -77,14 +92,23 @@ class MyApplication(pygubu.TkApplication):
             self.pp.pprint("Setting Up App")
         #Note to self,  from trying a bunch of different resolutions and 3 monitors i found that,
         # stash/inv tabs had a fixed width to height ratio of 886/1440 (~0.6153)that must be obeyed.
-        self.screen_res = [int(dim) for dim in self.config['Config']['screen_res'].split('x')]
-        if len(self.screen_res) != 2:
-            raise ValueError("Screen Resolution was not given correctly. Use no spaces and only a single 'x'.")
-        # self.tab_width_frac = 888/1440 * self.screen_res[1] / self.screen_res[0] # Not actually used in the end.
-        # from same experiments, stash starts 22 pixels away from edge, or 22/1440 fraction of screen width, and top is 215/1440 fraction.
-        self.tab_origin = 22/1440 * self.screen_res[1], 215/1440 * self.screen_res[1]
-        # apply similar rules to ending coordinates  -notaspy 14-9-2020
-        self.tab_end = 864/1440 * self.screen_res[1], 1057/1440 * self.screen_res[1]
+        if self.config['Config']['windowed'].lower() == 'true':
+            window_props = self.get_poe_window_location()
+            # self.tab_width_frac = 888/1440 * self.screen_res[1] / self.screen_res[0] # Not actually used in the end.
+            # from same experiments, stash starts 22 pixels away from edge, or 22/1440 fraction of screen width, and top is 215/1440 fraction.
+            self.tab_origin = window_props[2] + 22/1440 * window_props[1], window_props[3] + 215/1440 * window_props[1]
+            # apply similar rules to ending coordinates  -notaspy 14-9-2020
+            self.tab_end = window_props[2] + 864/1440 * window_props[1], window_props[3] + 1057/1440 * window_props[1]
+        else:
+            self.screen_res = [int(dim) for dim in self.config['Config']['screen_res'].split('x')]
+            if len(self.screen_res) != 2:
+                raise ValueError("Screen Resolution was not given correctly. Use no spaces and only a single 'x'.")
+            # self.tab_width_frac = 888/1440 * self.screen_res[1] / self.screen_res[0] # Not actually used in the end.
+            # from same experiments, stash starts 22 pixels away from edge, or 22/1440 fraction of screen width, and top is 215/1440 fraction.
+            self.tab_origin = 22/1440 * self.screen_res[1], 215/1440 * self.screen_res[1]
+            # apply similar rules to ending coordinates  -notaspy 14-9-2020
+            self.tab_end = 864/1440 * self.screen_res[1], 1057/1440 * self.screen_res[1]
+        
         # scale the size of a stash tab box depending on if it is quad or not.
         # TODO: currently set by user, but can actually get this from the site request
         if self.config['Config']['quad_tab'].lower() == 'true':
