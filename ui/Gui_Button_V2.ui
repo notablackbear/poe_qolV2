@@ -421,19 +421,20 @@
       </object>
     </child>
     <child>
-      <object class="tk.Button" id="button_3">
+      <object class="tk.Button" id="Button_3">
+        <property name="compound">bottom</property>
         <property name="foreground">#FF0000</property>
         <property name="height">1</property>
-        <property name="justify">center</property>
+        <property name="justify">right</property>
         <property name="width">1</property>
         <layout manager="grid">
           <property name="column">0</property>
           <property name="columnspan">1</property>
           <property name="propagate">True</property>
           <property name="row">0</property>
-          <property type="row" id="0" name="pad">2</property>
           <property name="rowspan">2</property>
           <property name="sticky">nsw</property>
+          <property type="row" id="0" name="pad">2</property>
         </layout>
       </object>
     </child>
