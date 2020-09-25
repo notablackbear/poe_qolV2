@@ -70,17 +70,18 @@ class MyApplication(pygubu.TkApplication):
         self.setup_app()
 
     # Detect PoE-window location
-    # Returns 
+    # Returns width, height, x-, and y-offset
     def get_poe_window_location(self):
         hwnd = windll.user32.FindWindowW(0, 'Path of Exile')
         rect = wintypes.RECT()
         windll.user32.GetWindowRect(hwnd, pointer(rect))
 
-        height_offset = 39 # Window border size
-        width_offset = 16 # Window border size
+        height_offset = 39 # Offset to get correct height
+        width_offset = 16 # -||- width
         height = rect.bottom - rect.top - height_offset
         width = rect.right - rect.left - width_offset
-        
+
+        # 7 and 31 are magical offset numbers related to Windows-border size
         return (width, height, rect.left + 7, rect.top + 31)
 
     def setup_app(self):
