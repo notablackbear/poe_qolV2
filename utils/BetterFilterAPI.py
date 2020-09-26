@@ -25,9 +25,8 @@ def get_filter_directory():
     """
     Created by: 0xdavidel
 
-    Get the filter folder path
-    This path is always the filter directory
-    Proof - https://www.pathofexile.com/forum/view-thread/1835293/page/1#p14200591
+    Get the old default filter path.
+    I was wrong to assume that the filter directory was persistant
     """
     user_path = Path.home()
     return os.path.join(user_path, "Documents", "My Games", "Path of Exile")
@@ -37,12 +36,12 @@ def get_filter_path(path):
     """
     Created by: 0xdavidel
 
-    Get the absolute filter path
+    Get the absolute filter path, if the path inputted is absolute then it will return it back - meaning you can pass custom full paths 
     """
 
     filter_directory = get_filter_directory()
-    # If path is absolute check if its the POE filter path and return the path as is
-    if os.path.isabs(path) and path.startswith(filter_directory):
+    # If path is absolute return the path as is
+    if os.path.isabs(path):
         return path
     else:
         # The path is reletive, append it to the POE filter path
