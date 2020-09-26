@@ -120,7 +120,7 @@ class stash_tab:
                 self.tab_items.pop(i)
                 return
 
-    def retrieve_all_by_tag(self, tag, include_unique=True, include_identified=True):
+    def retrieve_all_by_tag(self, tag, unique_only=False, identified_only=False):
         """
         Created by: 0xdavidel
 
@@ -129,11 +129,11 @@ class stash_tab:
         myList = []
         tag = tag.lower()
         for item in self.tab_items:
-            if not include_unique:
+            if unique_only:
                 if item.is_unique:
                     continue
-            if not include_identified:
-                if item.is_identified:
+            if identified_only:
+                if not item.is_identified:
                     continue
             # The +"s" is because all the tags look like "rings", and its for ease of use if you forget to add "s" in the filter
             if tag in item.tags or tag+"s" in item.tags:
