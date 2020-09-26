@@ -604,7 +604,7 @@ class MyApplication(pygubu.TkApplication):
             self.pp.pprint("ERROR : {}".format(str(e)))
             Msg.showinfo(title=MSG_BOX_TITLE, message=str(e))
             # Lets not continue running
-            os.exit(1)
+            sys.exit(1)
 
         self.debug_print("Stash tab retrieved")
 
@@ -623,7 +623,7 @@ class MyApplication(pygubu.TkApplication):
             debug_print("Exception reading chaos filter: {}".format(str(e)))
             Msg.showinfo('POE QoL error',
                          "Exception reading chaos filter: {}".format(str(e)))
-            os.exit(1)
+            sys.exit(1)
 
 
 
@@ -674,7 +674,7 @@ class MyApplication(pygubu.TkApplication):
             self.debug_print("User selected a non existant filter file")
             Msg.showinfo(
                 'POE QoL error', 'Could not find your selected filter, try again next time!')
-            os.exit(1)
+            sys.exit(1)
 
         self.main_filter_path=main_filter_path
 
@@ -694,7 +694,7 @@ class MyApplication(pygubu.TkApplication):
                 "Something went very wrong while updating the filter")
             Msg.showinfo(
                 'POE QoL error', "Something went very wrong while updating the filter")
-            os.exit(1)
+            sys.exit(1)
         ignore_threshold_list=self.config['Config']['ignore_threshold']
         # Copy of the full chaos filter, remove entries from here as we go through the different slots
         temp_chaos_filter=copy.copy(self.chaos_filter_parsed)
