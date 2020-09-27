@@ -115,10 +115,17 @@ class MyApplication(pygubu.TkApplication):
         self.setup_app()
 
     def sync_stashtab_records_thread(self):
+        """
+        This thread sleeps half a second, check if enough time elapsed and then syncs the inventory if deemed needed
+        """
+        elapsed = 0
         while True:
-            if not self.check_inventory_sync():
-                self.sync_stash_tabs()
-            time.sleep(SYNC_TRY_RATE)
+            time.sleep(0.5)
+            elapsed += 0.5
+            if elapsed >=SYNC_TRY_RATE:
+                elapsed = 0
+                if not self.check_inventory_sync():
+                    self.sync_stash_tabs()
 
     def setup_app(self):
         """
