@@ -30,6 +30,7 @@ MAIN_GUI_FRAME_NAME = 'Frame_1'
 RESOURCES_FOLDER = 'resources'
 SYNC_TRY_RATE = 10
 MSG_BOX_TITLE = 'POE QoL'
+RUNNING = True
 
 def debug_app(debug_bool):
     sys.stdout = open(DEBUG_LOG_PATH, 'w')
@@ -120,6 +121,8 @@ class MyApplication(pygubu.TkApplication):
         """
         elapsed = 0
         while True:
+            if not self.sync_running:
+                break
             time.sleep(0.5)
             elapsed += 0.5
             if elapsed >=SYNC_TRY_RATE:
@@ -246,9 +249,10 @@ class MyApplication(pygubu.TkApplication):
         # 0xdavidel: No actual need but it really doesn't hurt anything, so instead of calling it once i created a thread to call it once every SYNC_TRY_RATE seconds
         # This should eliminate the out of sync problems, MIGHT cause race conditions when reading the stash tab data
 
+        self.sync_running = True
         self.stash_sync_thread=threading.Thread(
             target=self.sync_stashtab_records_thread)
-        self.stash_sync_thread.deamon=True
+        # self.stash_sync_thread.daemon=True
         self.stash_sync_thread.start()
 
 
@@ -258,6 +262,7 @@ class MyApplication(pygubu.TkApplication):
 
     def run(self):
         """Run the main loop. Self explanatory."""
+
         self.mainwindow.mainloop()
 
     def remove_highlights(self, update_local_record=True):
@@ -733,6 +738,13 @@ class MyApplication(pygubu.TkApplication):
         write_section_to_filter(self.main_filter_path,
                                 CHAOS_RECIPE_SECTION_NAME, temp_chaos_filter)
 
+    def handle_on_close(self):
+        # Kill the sync thread
+        self.sync_running = False
+        # self.stash_sync_thread.join()
+        # Incert any other on_close operations you might want
+
+
     # Below are just methods that will search the stash tab for common things. didn't mess with these -notaspy 14-9-2020
 
     def search(self, text):
@@ -794,10 +806,16 @@ class MyApplication(pygubu.TkApplication):
     def unid(self):
         self.search('"unid"')
 
-
 if __name__ == '__main__':
+    def on_close():
+        # Signal the program that its time to close itself
+        app.handle_on_close()
+        # Ugly way to exit since the thread didnt want to cooperate properly
+        sys.exit(1)
     # legacy. Run the applet.
     root=tk.Tk()
+    # Bind an on_close function
+    root.wm_protocol ("WM_DELETE_WINDOW", on_close)
     root.title('Path of Exile - Quality of Life (POE-QOL)')
     app=MyApplication(root)
     app.run()
