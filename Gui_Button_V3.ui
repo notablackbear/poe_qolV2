@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="tk.Frame" id="Main_Frame">
+    <property name="background">#424242</property>
+    <property name="padx">5</property>
+    <property name="pady">5</property>
+    <property name="takefocus">false</property>
+    <property name="width">200</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Button" id="Fragments">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">fragments</property>
+        <property name="image">FragmentChimera.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Frags</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Essence">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">essences</property>
+        <property name="image">Greed7.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Essence</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="DivCard">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">div_cards</property>
+        <property name="image">Deck.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">DivCard</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Currency">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">currency</property>
+        <property name="image">CurrencyRerollRare.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Currency</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="delve">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">delve</property>
+        <property name="image">AbberantFossil.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">delve</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="incubator">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">incubators</property>
+        <property name="image">IncubationUniques.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">incubator</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="blight_map">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">blight</property>
+        <property name="image">blight.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">blight_map</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="map">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">maps</property>
+        <property name="image">Gorge3.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">map</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="veiled">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">veiled</property>
+        <property name="image">Veiled_modified.gif</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">veiled</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="jewels">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">jewels</property>
+        <property name="image">Jewels.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Jewels</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="unique">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">uniques</property>
+        <property name="image">Uniques.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">unique</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="gem">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">gems</property>
+        <property name="image">impale.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">gem</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="prophecy">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">prophecies</property>
+        <property name="image">ProphecyOrbRed.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">prophecy</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="settings">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Settings</property>
+        <property name="width">13</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="overlay">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">overlay</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Overlay</property>
+        <property name="width">13</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+          <property name="sticky">se</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="six_sockets">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="bitmap">error</property>
+        <property name="command">six_sockets</property>
+        <property name="image">six_sockets.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">six_sockets
+</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="delirium">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">delirium</property>
+        <property name="image">delirium.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">delirium
+</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="metamorph">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">metamorph</property>
+        <property name="image">metamorph.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">metamorph
+</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="remove_highlights_main">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">remove_highlights</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">Remove Highlights</property>
+        <property name="width">15</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="remaining">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">remaining</property>
+        <property name="image">questionmark_grey.png</property>
+        <property name="overrelief">raised</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">False</property>
+        <property name="text" translatable="yes">remaining</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Frame" id="Overlay_Frame">
+    <property name="background">#424242</property>
+    <layout manager="pack">
+      <property name="propagate">True</property>
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="OneHandWeapons">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">left</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Weapons:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="BodyArmours">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Armours:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Boots">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Boots:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Helmets">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Helmets:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Gloves">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Gloves:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Belts">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Belts:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Amulets">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Amulets:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Rings">
+        <property name="anchor">w</property>
+        <property name="background">#424242</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Rings:</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Lock_Button">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">lock_overlay</property>
+        <property name="image">opened.png</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="width">24</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_1">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">remove_highlights</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Remove Highlights</property>
+        <property name="width">15</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_1_3">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">refresh_me</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Refresh</property>
+        <property name="width">15</property>
+        <layout manager="grid">
+          <property name="column">6</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="button_1_4">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">chaos_recipe</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Chaos
+Recipe</property>
+        <property name="width">9</property>
+        <layout manager="grid">
+          <property name="column">7</property>
+          <property name="ipady">5</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="close_overlay">
+        <property name="activebackground">#424242</property>
+        <property name="background">#424242</property>
+        <property name="command">close_overlay</property>
+        <property name="image">close-button.png</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="width">24</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Frame" id="Settings_Frame">
+    <property name="background">#424242</property>
+    <property name="height">500</property>
+    <property name="padx">5</property>
+    <property name="pady">5</property>
+    <property name="takefocus">false</property>
+    <property name="width">750</property>
+    <layout manager="grid" />
+    <child>
+      <object class="tk.Text" id="text_2">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">account name:
+</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.065</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_4">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="cursor">question_arrow</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">league:</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.13</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_5">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="cursor">question_arrow</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">POESESSID:</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.195</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_6">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="cursor">question_arrow</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="setgrid">false</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">main-filter:</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.46</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_7">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="cursor">question_arrow</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">item threshold:</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.325</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_8">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">2</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">maximal number of       highlighted sets:</property>
+        <property name="width">20</property>
+        <property name="wrap">word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.38</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="browse">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">browse_for_filter_dir</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Browse</property>
+        <property name="width">12</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.835</property>
+          <property name="rely">0.454</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="account_name">
+        <property name="font">{Arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">60</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.065</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="league">
+        <property name="font">{arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">60</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.13</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="poesessid">
+        <property name="font">{arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">60</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.195</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="tab_number">
+        <property name="font">{arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">4</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.26</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="item_threshold">
+        <property name="font">{arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">4</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.325</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="max_hightlighted_sets">
+        <property name="font">{arial} 10 {}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">4</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.391</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="filter_directory">
+        <property name="font">{Arial CE} 10 {bold}</property>
+        <property name="validate">focusin</property>
+        <property name="validatecommand">changed_settings</property>
+        <property name="width">60</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.46</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_9">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="cursor">question_arrow</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">tab number:</property>
+        <property name="width">20</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.26</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="quad_tab">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="offvalue">0</property>
+        <property name="onvalue">1</property>
+        <property name="overrelief">flat</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">quad tab</property>
+        <property name="variable">int:self.d</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.55</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="windowed_mode">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">windowed mode</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.23</property>
+          <property name="rely">0.55</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="text_10">
+        <property name="background">#424242</property>
+        <property name="blockcursor">true</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">1</property>
+        <property name="insertunfocussed">none</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">ignore item threshold for:</property>
+        <property name="width">30</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.676</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Body_Armours_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Body Armours</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.7475</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Helmets_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Helmets</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.23</property>
+          <property name="rely">0.7475</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Weapons_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Weapons</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.43</property>
+          <property name="rely">0.7475</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Gloves__check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="relief">flat</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Gloves</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.65</property>
+          <property name="rely">0.7475</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Boots_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Boots</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.8125</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Amulet_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Amulets</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.23</property>
+          <property name="rely">0.8125</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Rings_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Rings</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.43</property>
+          <property name="rely">0.8125</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Checkbutton" id="Belts_check">
+        <property name="activebackground">#555555</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">changed_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="selectcolor">#555555</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Belts</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.65</property>
+          <property name="rely">0.8125</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Apply">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">apply_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="state">disabled</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Apply</property>
+        <property name="width">12</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.87</property>
+          <property name="rely">0.945</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Close">
+        <property name="activebackground">#424242</property>
+        <property name="activeforeground">#ffffff</property>
+        <property name="background">#424242</property>
+        <property name="command">close_settings</property>
+        <property name="foreground">#ffffff</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Close</property>
+        <property name="width">12</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.733</property>
+          <property name="rely">0.945</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
