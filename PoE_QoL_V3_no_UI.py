@@ -28,6 +28,7 @@ class MyApplication():
         Main_Frame.grid(column='0', row='0')
         self.mainwindow = Main_Frame
 
+# TODO: All these repeated lines below should probably be handled by a more general function
         Fragments = tk.Button(Main_Frame)
         self.img_FragmentChimera = self.get_img_path('FragmentChimera.png')
         Fragments.config(activebackground='#424242', background='#424242', image=self.img_FragmentChimera,
@@ -200,6 +201,7 @@ class MyApplication():
         remove_highlights_main.grid(column='3', columnspan='2', row='4', sticky='e')
         remove_highlights_main.configure(command=self.remove_highlights)
 
+        ## TODO: Move save file handling outside of App to a back end function that can be imported if needed
         if not os.path.isfile('savefile.txt'):
             self.savefile = open('savefile.txt', 'w')
             self.savefile.write(' ' + '\n' + ' ' + '\n' + ' ' + '\n' + ' ' + '\n' + ' ' + '\n' + ' ')
@@ -207,6 +209,8 @@ class MyApplication():
 
         # load old settings
         self.savefile = open('savefile.txt', 'r')
+        ## TODO: Use the standard library config functionality as in original code, which should avoid errors in future
+        ##TODO: use a dict instead of list for settings_data so it is more clear what is queried in other parts of code
         self.settings_data = self.savefile.read().splitlines()  # each line -> one entity in list
         self.savefile.close()
 
@@ -218,6 +222,7 @@ class MyApplication():
     def run(self):
         self.mainwindow.mainloop()
 
+## TODO: We probaby don't need to compress all the resources into the .exe, since there are multiple files being installed anyway
     def get_img_path(self, img):
         # we need this function to convert the .py script to an .exe in one file, which includes all images
         # to use the compressed images in the exe we need an special path called sys._MEIPASS, where all intern data is saved
@@ -234,7 +239,7 @@ class MyApplication():
         self.hightlightbox_size_calculation()
         try:
             item_threshold = int(self.settings_data[1].split(',')[4])
-        except:
+        except:  ##TODO: Handle specific errors here
             Msg.showinfo(title='Warning!', message='Item threshold must be a number! The value is set to 10 (default).')
             item_threshold = 10
 
@@ -285,6 +290,7 @@ class MyApplication():
         if os.path.isdir(self.filterdir):
             if not os.path.isfile(self.filterdir + '/chaos_items_filter.filter'):
                 with open(self.filterdir + '/chaos_items_filter.filter', 'w') as filt:
+                    ##TODO: Don't hardcode the default filter. Better to be able to change it without recompiling for example when debugging, or if user wants to change colors
                     # hardcode the default chaos recipe, so no extra file needed
                     filt.writelines(
                         ['# Chaos Recipe BodyArmours\n',
@@ -397,6 +403,7 @@ class MyApplication():
                 Msg.showinfo(title='Information', message='There was no filter for the chaos items in the selected directory. The default filter has been loaded and can now be modified.')
 
     def read_default_chaos_filter_sections(self):
+        ##TODO: See if Better* can handle this functionality instead
         """
         User can use the filter that comes with this program, or customize each slot to their liking.
         Only important things are that each section starts with a '#' and has the correct item slot name in that line
@@ -512,7 +519,7 @@ class MyApplication():
                 if boolval != '1':
                     self.ignore_item_threshold_list[i] = ''
             # thats the case when a colour change from green (number of items reached cap) ->  yellow or red / the other way
-            exec(f'global actual_colour; actual_colour = self.{key}.cget("foreground")')
+            exec(f'global actual_colour; actual_colour = self.{key}.cget("foreground")') ## TODO: No more exec uses
             if new_colour == '#00e600' and (actual_colour == '#e6e600' or actual_colour == '#e60000') and key not in self.ignore_item_threshold_list:
                 self.flg_filterupdate = 1
                 self.show_filter_refresh_icon()
@@ -553,6 +560,7 @@ class MyApplication():
         pass
 
     def chaos_recipe(self):
+        ##TODO: This can be rewritten to be more generalized for all items types and states. V4?
         self.remove_highlights()
         unident = self.check_complete_set()
         if not unident:
@@ -673,7 +681,7 @@ class MyApplication():
             json.loads(a.text)['items']
         except KeyError:
             Msg.showinfo(title='Error!', message='Bad Response from pathofexile.com. Please check the settings!')
-
+        ##TODO: Update this new functionality to make use of Better* functions
         # categories to sort all the items in:
         # 6 sockets                       check
         # currency                      check
@@ -904,7 +912,7 @@ class MyApplication():
         self.stash_filtering(self.stash_finder()[16])
     def remaining(self):
         self.stash_filtering(self.stash_finder()[17])
-
+    # TODO: if overlay window can be sectioned off like this, can we move it to its own file or class?
     # ---------------- Overlay-Window -------------------------------------------------------------
 
     # builds the overlay-window from the UI-file
@@ -1038,31 +1046,13 @@ class MyApplication():
 
             # calculate new variables for functionality based on the settings
             self.setup_app_with_settings()
-###
-            # starting the observation from savefile.txt
-            # self.filterfile = os.path.basename(self.settings_data[5])
-            # patterns = os.path.join('*\\', self.filterfile)
-            # patterns = [patterns]
-            # ignore_patterns = ""
-            # ignore_directories = True
-            # case_sensitive = True
-            # my_event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories,
-            #                                                case_sensitive)
-            #
-            # my_event_handler.on_modified = self.on_modified
-            #
-            # path = self.filterdir
-            # my_observer = Observer()
-            # my_observer.schedule(my_event_handler, path, recursive=True)
-            #
-            # my_observer.start()
 
 
         else:
             Msg.showinfo(title='Warning!', message='Please adjust the settings first!')
             return
 
-    def on_modified(self, event):
+    def on_modified(self, event):  ##TODO: Use a logger here instead :)
         print(f"hey buddy, {event.src_path} has been modified")
 
     def close_overlay(self):
@@ -1085,7 +1075,7 @@ class MyApplication():
         else:
             self.picture = self.get_img_path("opened.png")
         self.Lock_Button.configure(image=self.picture)
-
+##TODO: Same with Settings-Window; If it is sectioned off here, can it be moved outside of this main class
 # ---------------- Settings-Window -------------------------------------------------------------
 
     def settings(self):
@@ -1107,7 +1097,7 @@ class MyApplication():
 
         # define variables for checkmarks, tried dict, but dont got it
         for i in range(10):
-            exec('self.v' + str(i) + ' = ' + 'IntVar()') # not amazing but works so idc
+            exec('self.v' + str(i) + ' = ' + 'IntVar()') # not amazing but works so idc  ##TODO: Re-evaluate this
             # v0 = IntVar() ; v1 = IntVar() ; ....
         # define variables for entry-text
         for i in range(7):
@@ -1360,7 +1350,7 @@ class MyApplication():
     def changed_settings(self):
         # this method triggers when something is changed in all of the entry-textfields or checkmarks
         # it will enable the "Apply"-button to apply and save the changes
-        # i know using the validation-callback is not smart (focus_get would be nicer) but it works so idc
+        # i know using the validation-callback is not smart (focus_get would be nicer) but it works so idc ## TODO:
         try:
             self.Apply['state'] = 'normal'
             return True
@@ -1421,7 +1411,7 @@ def shut_down():
 
 
 # ---------------- actually starting the entire program -------------------------------------------------------------
-
+##TODO: Wrap in if __name__ == '__main__':
 root = tk.Tk()
 root.title('Path of Exile - Quality of Life Tool')
 root.protocol('WM_DELETE_WINDOW', shut_down)
