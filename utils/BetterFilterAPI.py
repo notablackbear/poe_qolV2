@@ -29,7 +29,7 @@ def get_filter_directory():
     I was wrong to assume that the filter directory was persistant
     """
     user_path = Path.home()
-    return os.path.join(user_path, "Documents", "My Games", "Path of Exile")
+    return os.path.join(user_path, "Documents", "My Games", "Path of Exile")  ## TODO
 
 
 def get_filter_path(path):

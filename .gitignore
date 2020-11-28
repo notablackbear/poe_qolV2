@@ -2,3 +2,5 @@
 poeqol2_logfile.txt
 
 *.pyc
+savefile.txt
+.idea
